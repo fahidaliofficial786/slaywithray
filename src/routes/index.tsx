@@ -1,35 +1,24 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { ArrowRight, Sparkles, Dumbbell, Apple, Target, Instagram, Facebook, Twitter, Youtube, Star, Check } from "lucide-react";
 import { InstagramCard } from "@/components/InstagramCard";
-import ray1 from "@/assets/ray1.jpg.asset.json";
-import ray2 from "@/assets/ray2.jpg.asset.json";
-import ray3 from "@/assets/ray3.jpg.asset.json";
-import ray4 from "@/assets/ray4.jpg.asset.json";
-import ray5 from "@/assets/ray5.jpg.asset.json";
-import ray6 from "@/assets/ray6.jpg.asset.json";
-import ray7 from "@/assets/ray7.jpg.asset.json";
-import ray8 from "@/assets/ray8.jpg.asset.json";
-import ray9 from "@/assets/ray9.png.asset.json";
-import ray10 from "@/assets/ray10.jpg.asset.json";
-import ray11 from "@/assets/ray11.jpg.asset.json";
 
-const heroImg = ray8.url;
-const aboutImg = ray6.url;
-const coachingImg = ray4.url;
-const program1 = ray1.url;
-const program2 = ray5.url;
-const program3 = ray3.url;
-const program4 = ray7.url;
+const heroImg = "/images/ray8.jpg";
+const aboutImg = "/images/ray6.jpg";
+const coachingImg = "/images/ray4.jpg";
+const program1 = "/images/ray1.jpg";
+const program2 = "/images/ray5.jpg";
+const program3 = "/images/ray3.jpg";
+const program4 = "/images/ray7.jpg";
 
 const gallery = [
-  { src: ray8.url, alt: "Raynisha training in the gym" },
-  { src: ray9.url, alt: "Raynisha poolside" },
-  { src: ray10.url, alt: "Raynisha by the pool" },
-  { src: ray11.url, alt: "Raynisha studio portrait" },
-  { src: ray2.url, alt: "Raynisha outdoors" },
-  { src: ray5.url, alt: "Raynisha at the tennis court" },
-  { src: ray1.url, alt: "Raynisha in training gear" },
-  { src: ray3.url, alt: "Raynisha portrait" },
+  { src: "/images/ray8.jpg", alt: "Raynisha training in the gym" },
+  { src: "/images/ray9.jpg", alt: "Raynisha poolside" },
+  { src: "/images/ray10.jpg", alt: "Raynisha by the pool" },
+  { src: "/images/ray11.jpg", alt: "Raynisha studio portrait" },
+  { src: "/images/ray2.jpg", alt: "Raynisha outdoors" },
+  { src: "/images/ray5.jpg", alt: "Raynisha at the tennis court" },
+  { src: "/images/ray1.jpg", alt: "Raynisha in training gear" },
+  { src: "/images/ray3.jpg", alt: "Raynisha portrait" },
 ];
 
 const steps = [
@@ -102,7 +91,7 @@ function Index() {
       <header className="sticky top-0 z-40 px-4 pt-4">
         <nav className="glass-strong mx-auto flex max-w-6xl items-center justify-between rounded-full px-4 sm:px-6 py-3 shadow-[0_10px_40px_-15px_rgba(255,118,167,0.35)]">
           <a href="#home" className="flex items-center gap-3 shrink-0">
-            <img src="/logo.svg" alt="Slay With Ray" className="h-10 w-auto object-contain" />
+            <img src="/logo.png" alt="Slay With Ray" className="h-12 sm:h-14 w-auto object-contain max-w-[240px]" />
           </a>
           <ul className="hidden lg:flex items-center gap-7 text-sm font-medium text-white/80">
             {nav.map(n => <li key={n.href}><a href={n.href} className="hover:text-[color:var(--pink)] transition-colors">{n.label}</a></li>)}
@@ -327,8 +316,8 @@ function Index() {
           <div className="pointer-events-none absolute -bottom-24 -left-24 h-80 w-80 rounded-full blur-3xl opacity-30" style={{background:"var(--gradient-gold)"}} />
           <div className="relative grid gap-8 lg:grid-cols-[1fr_1.2fr] items-center">
             <div className="grid grid-cols-2 gap-4">
-              <img src={ray9.url} alt="Raynisha poolside" loading="lazy" className="rounded-3xl object-cover aspect-[3/4] w-full" />
-              <img src={ray11.url} alt="Raynisha studio portrait" loading="lazy" className="rounded-3xl object-cover aspect-[3/4] w-full mt-8" />
+              <img src="/images/ray9.jpg" alt="Raynisha poolside" loading="lazy" className="rounded-3xl object-cover aspect-[3/4] w-full" />
+              <img src="/images/ray11.jpg" alt="Raynisha studio portrait" loading="lazy" className="rounded-3xl object-cover aspect-[3/4] w-full mt-8" />
             </div>
             <div>
               <div className="text-xs tracking-[0.3em] text-gradient-gold">RESULTS THAT LAST</div>
@@ -474,7 +463,7 @@ function Index() {
       <footer className="border-t border-white/10 px-4 py-12">
         <div className="mx-auto max-w-6xl grid gap-8 md:grid-cols-[1.5fr_1fr_1fr] items-start">
           <div>
-            <img src="/logo.svg" alt="Slay With Ray" className="h-10 w-auto object-contain mb-3" />
+            <img src="/logo.png" alt="Slay With Ray" className="h-16 sm:h-20 w-auto object-contain max-w-[300px] mb-4" />
             <p className="mt-3 text-sm text-white/60 max-w-sm">Helping women build body and confidence — one workout, one meal, one check-in at a time.</p>
             <div className="mt-5 flex gap-3">
               {[
