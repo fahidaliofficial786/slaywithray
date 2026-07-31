@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { ArrowRight, Sparkles, Dumbbell, Apple, Target, Instagram, Facebook, Twitter, Youtube, Star, Check } from "lucide-react";
 import { InstagramCard } from "@/components/InstagramCard";
+import { PromoBanners } from "@/components/PromoBanners";
 
 const heroImg = "/images/ray8.jpg";
 const aboutImg = "/images/ray6.jpg";
@@ -497,6 +498,8 @@ function Index() {
           <div>Building better brands · Building better bodies</div>
         </div>
       </footer>
+
+      <PromoBanners />
     </div>
   );
 }
